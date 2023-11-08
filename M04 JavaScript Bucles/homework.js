@@ -17,7 +17,7 @@ function mayoriaDeEdad(edad) {
    // Tu código:
    if ( edad>=18){
       return "Allowed"
-   }else 'not allowed'
+   }else return 'Not allowed'
 }
 
 function conection(status) {
@@ -42,7 +42,7 @@ function saludo(idioma) {
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
    if (idioma == "aleman"){
-      return "Guten tag!";
+      return "Guten Tag!";
    }else if (idioma== "mandarin"){
       return "Ni Hao!"
    }else if (idioma =="ingles"){
@@ -86,7 +86,7 @@ function estaEnRango(num) {
    // Tu código:
    if ( num<50 && num>20){
 return true;
-   }else false
+   }else return false
 }
 
 function esEntero(num) {
@@ -108,12 +108,12 @@ function fizzBuzz(num) {
    // De lo contrario, retorna false.
    // Tu código:
    if(num%3===0 && num%5===0){
-      return "Fizzbuzz";
+      return "fizzbuzz";
    }else if ( num%3===0){
-      return "Fizz";
+      return "fizz";
    }else if(num%5===0){
-      return "Buzz";
-   }else false
+      return "buzz";
+   }else return false
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -147,15 +147,17 @@ function esPrimo(num) {
    }else for (let i =2; i<num;i++ ){
      if( num%i===0){
       return false 
-     }else return true
-   }
+     }
+   } return true
 }
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   return Boolean(valor)
+   if(valor == true ){
+      return "Soy verdadero"
+   }else return "Soy falso"
 
 }
 
@@ -163,7 +165,7 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
-   if ( num.length==3){
+   if ( num.length===3){
       return true
    }else return false
 }
@@ -173,9 +175,9 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-   let i=0
-   do{i=i+0 ; num+5}
-   while (i<5);
+   var  i=0
+   do{i=i+1 ; num=num+5}
+  while (i<8); return num;
 
    
 
